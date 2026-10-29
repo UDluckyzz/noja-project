@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>노잣돈 갚기 프로젝트, 그 후 | 오라초 6학년 영상 상영관</title>
+<meta name="description" content="오라초등학교 6학년 오라 다이음 프로젝트 결과 영상 7편">
+<meta name="theme-color" content="#F6EFE3">
+<meta property="og:title" content="노잣돈 갚기 프로젝트, 그 후">
+<meta property="og:description" content="오라초 6학년이 직접 만든 영상 7편 상영관">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23F2C46B' stroke='%23D9A441' stroke-width='4'/%3E%3Crect x='22' y='22' width='20' height='20' rx='2' fill='%23FFFBF4' stroke='%23D9A441' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6EFE3; --bg2:#EFE5D3; --paper:#FFFBF4; --ink:#3F3550; --muted:#8A7F8F; --line:#E4D8C3;
+    --gold:#F2C46B; --gold-d:#D9A441;
+    --peach:#F9D5CC; --peach-d:#E8907F;
+    --mint:#CDEBDF;  --mint-d:#4FA88C;
+    --lav:#DDD7F3;   --lav-d:#7E70C9;
+    --butter:#FBE8B4;--butter-d:#C9962A; --ink-red:#C2594B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;background:var(--bg)}
+  body{word-break:keep-all;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45  0 0 0 0 .36  0 0 0 0 .25  0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .09' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .55  0 0 0 0 .45  0 0 0 0 .3  0 0 0 .5 -.12'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)' opacity='.35'/%3E%3C/svg%3E"),repeating-linear-gradient(0deg,transparent 0 35px,rgba(150,120,80,.10) 35px 36px),radial-gradient(130% 90% at 50% 40%,#F8F1E4,#EDE1CB);background-attachment:scroll;color:var(--ink);font-family:"Gowun Dodum","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:880px;margin:0 auto;padding:0 18px}
+
+  /* ---------- hero ---------- */
+  header{position:relative;overflow:hidden;padding:104px 0 26px;
+         background:transparent;border-bottom:1px dashed #D8C7AA}
+  .string{position:absolute;top:0;left:0;width:100%;height:110px;pointer-events:none;z-index:1}
+  header .wrap{position:relative;z-index:2}
+  .eyebrow{display:inline-block;font-size:14px;color:var(--ink);background:var(--paper);border:1px solid var(--line);
+           border-radius:999px;padding:4px 12px;margin-bottom:14px}
+  h1{font-family:"Jua",sans-serif;font-weight:400;font-size:clamp(34px,9vw,58px);line-height:1.15;letter-spacing:-.5px}
+  h1 .after{color:var(--peach-d)}
+  .stamp{display:inline-flex;vertical-align:middle;margin-left:14px;width:78px;height:78px;border:3px solid var(--peach-d);border-radius:50%;
+         color:var(--peach-d);flex-direction:column;align-items:center;justify-content:center;background:rgba(255,251,244,.6);
+         transform:rotate(-14deg);font-family:"Jua",sans-serif;line-height:1.1;text-align:center;letter-spacing:0}
+  .stamp b{font-size:17px;font-weight:400}.stamp small{font-size:10px}
+  .lead{margin-top:12px;color:var(--muted);font-size:16px}
+
+  /* ---------- category chips ---------- */
+  nav{position:sticky;top:0;z-index:5;background:rgba(244,235,219,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:12px 18px;max-width:880px;margin:0 auto;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:none;border:1.5px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 14px;font-size:14px;
+        font-family:inherit;color:var(--ink);cursor:pointer;white-space:nowrap}
+  .chip b{font-family:"Jua",sans-serif;font-weight:400;margin-left:4px;color:var(--muted)}
+  .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+  .chip[aria-pressed="true"] b{color:var(--gold)}
+
+  /* ---------- sections ---------- */
+  section{margin-top:30px}
+  section[hidden]{display:none}
+  .sec{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .badge{flex:none;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+         font-family:"Jua",sans-serif;font-size:19px}
+  .sec h2{font-family:"Jua",sans-serif;font-weight:400;font-size:23px;line-height:1.2}
+  .desc{color:var(--muted);font-size:14px;margin:0 0 14px 54px}
+
+  /* ---------- coin ---------- */
+  .coin{position:relative;flex:none;width:52px;height:52px;border-radius:50%;background:var(--gold);
+        box-shadow:inset 0 0 0 4px var(--gold),inset 0 0 0 6px var(--gold-d),0 2px 0 rgba(63,53,80,.12)}
+  .coin::before{content:"";position:absolute;left:50%;top:50%;width:16px;height:16px;margin:-8px 0 0 -8px;background:var(--paper);border:2px solid var(--gold-d);border-radius:3px}
+  .coin .rk{position:absolute;bottom:-9px;left:50%;transform:translateX(-50%);background:var(--paper);color:var(--ink);
+            font-family:"Jua",sans-serif;font-size:13px;padding:0 7px;border-radius:999px;border:1.5px solid var(--gold-d);white-space:nowrap}
+
+  /* ---------- thumbnails ---------- */
+  .thumb{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:var(--bg2)}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .ph{width:100%;height:100%}
+  .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .play i{width:50px;height:50px;border-radius:50%;background:rgba(255,251,244,.9);box-shadow:0 2px 10px rgba(63,53,80,.18);
+          display:flex;align-items:center;justify-content:center}
+  .play i::after{content:"";margin-left:5px;border-left:16px solid var(--ink);border-top:10px solid transparent;border-bottom:10px solid transparent}
+
+  /* ---------- cards ---------- */
+  .grid{display:grid;grid-template-columns:1fr;gap:14px}
+  .card{display:block;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45  0 0 0 0 .36  0 0 0 0 .25  0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E"),var(--paper);border:1px solid var(--line);border-radius:18px;padding:12px;
+        box-shadow:0 2px 0 rgba(63,53,80,.05);transition:transform .15s}
+  .card:active{transform:scale(.985)}
+  .card .row{display:flex;align-items:center;gap:12px;padding:12px 4px 4px}
+  .card h3{font-family:"Jua",sans-serif;font-weight:400;font-size:21px;line-height:1.25}
+  .card .go,.card .sub{font-size:13px;color:var(--muted)}
+  .feature h3{font-size:24px}
+
+  /* ---------- 바를 정(正) tally ---------- */
+  .tally{display:inline-block;vertical-align:middle;overflow:visible}
+  .tally path{fill:none;stroke:var(--ink-red);stroke-linecap:round;stroke-linejoin:round}
+  .tally.draw path{stroke-dasharray:40;stroke-dashoffset:40;animation:stroke .28s ease-out forwards}
+  @keyframes stroke{to{stroke-dashoffset:0}}
+  .ledger-cell{flex:none;min-width:62px;height:62px;padding:0 6px;border:1.5px solid var(--line);border-radius:8px;
+     background:repeating-linear-gradient(0deg,#FFFDF8 0 15px,#F1E7D6 15px 16px);
+     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+  .ledger-cell small{font-family:"Jua",sans-serif;font-size:12px;color:var(--ink-red);line-height:1}
+  .tallyline{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:var(--paper);border:1px dashed var(--peach-d);
+     border-radius:10px;padding:6px 12px;font-size:14px}
+  .tallyline b{font-family:"Jua",sans-serif;font-weight:400;color:var(--ink-red)}
+  .chip .tally{margin-left:6px}
+  .chip[aria-pressed="true"] .tally path{stroke:var(--gold)}
+
+  @media (min-width:720px){
+    header{padding-top:150px}
+    .grid:not(.two) .card{display:flex;gap:20px;align-items:center}
+    .grid:not(.two) .card .thumb{width:60%;flex:none}
+    .grid:not(.two) .card .row{padding:0}
+    .grid.two{grid-template-columns:1fr 1fr}
+    .stamp{width:96px;height:96px}.stamp b{font-size:21px}.stamp small{font-size:12px}
+  }
+  footer.wrap{margin:0 auto;padding:44px 18px 34px;text-align:center;color:var(--muted);font-size:13px}
+  footer .ledger{display:inline-block;background:var(--paper);border:1px solid var(--line);font-family:"Jua",sans-serif;color:var(--ink);
+                 padding:6px 14px;border-radius:8px;margin-bottom:10px;font-size:15px}
+</style>
+</head>
+<body>
+<header>
+  <svg class="string" viewBox="0 0 880 110" preserveAspectRatio="xMinYMin slice" aria-hidden="true">
+    <path d="M-20 16 C 140 86, 420 104, 700 36" fill="none" stroke="#E8907F" stroke-width="3"/>
+    <g id="coins"></g>
+  </svg>
+  <div class="wrap">
+    <span class="eyebrow">오라초등학교 6학년 · 오라 다이음</span>
+    <h1>노잣돈 갚기 프로젝트,<br><span class="after">그 후</span><span class="stamp" aria-hidden="true"><small>노자장부</small><b>빚<br>다 갚음!</b></span></h1>
+    <p class="lead">무대 위 낭독극을 넘어, 우리가 직접 기획하고 찍고 편집한 영상 7편</p>
+    <div class="tallyline" id="tallyline"></div>
+  </div>
+</header>
+
+<nav aria-label="영상 분류"><div class="chips" id="chips"></div></nav>
+
+<main class="wrap" id="main"></main>
+
+<footer class="wrap">
+  <div class="ledger">다오라 낭독극 · 2026 오라 다이음 6학년</div>
+  <p>영상은 ‘일부 공개’로 올려져 있어 이 페이지의 링크로만 볼 수 있어요.</p>
+  <p style="margin-top:6px"><a href="qr.html" style="text-decoration:underline">이 페이지 QR 코드 보기</a></p>
+</footer>
+
+<script>
+/* =================== 여기만 고치면 됩니다 =================== */
+
+// 학습지의 영상 유형 분류
+const CATEGORIES = [
+  { key: "all", no: "★", name: "반 전체 공통",     desc: "내 마음을 울린 동화 속 한마디", color: "butter" },
+  { key: "tut", no: "②", name: "꿀팁 튜토리얼",    desc: "후배에게 낭독극 비법을 알려 주는 강의 영상",               color: "mint" },
+  { key: "tra", no: "④", name: "예고편·숏폼",      desc: "작품을 영화처럼 소개하는 예고편 또는 세로형 숏폼 영상",     color: "lav" },
+  { key: "ad",  no: "⑤", name: "민주시민 공익광고", desc: "작품 속 가치를 우리 학교생활 장면으로 옮긴 광고",           color: "peach" }
+];
+
+// 영상 목록 (url에 유튜브 주소)
+const VIDEOS = [
+  { cat: "all", title: "동화 속 마음에 담긴 한마디", sub: "6학년 전체", url: "https://youtu.be/Rk5wqeZ-hec" },
+  { cat: "tut", title: "화이트 클로버", url: "https://youtu.be/7nxRNw4_p-U" },
+  { cat: "tra", title: "갚아조",       url: "https://youtu.be/acK2l_VkvJg" },
+  { cat: "tra", title: "근거리 연애",   url: "https://youtu.be/GyE4Tu-yALk" },
+  { cat: "tra", title: "기한과 지구",   url: "https://youtube.com/shorts/3ToYRi-Tv9w" },
+  { cat: "ad",  title: "삼대장",       url: "https://youtu.be/yP8f0WLTmm4" },
+  { cat: "ad",  title: "쇼에네",       url: "https://youtu.be/IY-TPEIGBeA" }
+];
+/* ============================================================ */
+
+// 장부 기록 번호: 페이지에 나오는 순서대로 1, 2, 3 …
+let __n = 0;
+CATEGORIES.forEach(c => VIDEOS.filter(v => v.cat === c.key).forEach(v => v.no = ++__n));
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ytId = u => { const m = (u||"").match(/(?:youtu\.be\/|v=|shorts\/|embed\/)([\w-]{11})/); return m ? m[1] : ""; };
+const link = u => u ? `href="${esc(u)}" target="_blank" rel="noopener"` : `href="#" onclick="return false"`;
+
+// 바를 정(正) 자로 세기: 5획마다 한 글자
+const STROKES = ["M7 7 H33", "M20 7 V33", "M20 20 H31", "M10 20 V33", "M5 33 H35"];
+function tally(n, h, draw){
+  const groups = Math.ceil(n / 5), w = groups * 40 + (groups - 1) * 6;
+  let paths = "", k = 0;
+  for (let g = 0; g < groups; g++){
+    const cnt = Math.min(5, n - g * 5);
+    for (let i = 0; i < cnt; i++, k++){
+      paths += `<path transform="translate(${g*46} 0)" d="${STROKES[i]}" style="animation-delay:${k*0.22}s"/>`;
+    }
+  }
+  return `<svg class="tally ${draw ? 'draw' : ''}" viewBox="0 0 ${w} 40" height="${h}" width="${h*w/40}" stroke-width="${h < 20 ? 4.5 : 3.6}" aria-hidden="true">${paths}</svg>`;
+}
+
+function thumb(v, color){
+  const id = ytId(v.url);
+  const inner = id
+    ? `<img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',style:'background:linear-gradient(135deg,var(--${color}),var(--paper))'}))">`
+    : `<div class="ph" style="background:linear-gradient(135deg,var(--${color}),var(--paper))"></div>`;
+  return `<div class="thumb">${inner}<span class="play"><i></i></span></div>`;
+}
+function card(v, c){
+  return `<a class="card ${c.key==='all'?'feature':''}" ${link(v.url)}>
+    ${thumb(v, c.color)}
+    <div class="row">
+      <span class="ledger-cell" aria-label="장부 기록 ${v.no}번">${tally(v.no, 30, true)}<small>기록 ${v.no}</small></span>
+      <div><h3>${esc(v.title)}</h3>
+        <span class="${v.sub ? 'sub' : 'go'}">${v.sub ? esc(v.sub) + " · " : ""}▶ 영상 보기</span></div>
+    </div></a>`;
+}
+
+document.getElementById("main").innerHTML = CATEGORIES.map(c => {
+  const list = VIDEOS.filter(v => v.cat === c.key);
+  if (!list.length) return "";
+  return `<section data-cat="${c.key}">
+    <div class="sec"><span class="badge" style="background:var(--${c.color});color:var(--${c.color}-d)">${c.no}</span>
+      <h2>${c.name}</h2></div>
+    <p class="desc">${c.desc}</p>
+    <div class="grid ${list.length > 1 ? 'two' : ''}">${list.map(v => card(v, c)).join("")}</div>
+  </section>`;
+}).join("");
+
+// category chips
+const chips = document.getElementById("chips");
+const chipData = [{ key: "*", name: "전체 보기", n: VIDEOS.length }]
+  .concat(CATEGORIES.map(c => ({ key: c.key, name: c.name, n: VIDEOS.filter(v => v.cat === c.key).length })).filter(c => c.n));
+chips.innerHTML = chipData.map((c,i) => `<button class="chip" data-k="${c.key}" aria-pressed="${i===0}" aria-label="${c.name} ${c.n}편">${c.name}${tally(c.n, 16)}</button>`).join("");
+chips.addEventListener("click", e => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  chips.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b));
+  document.querySelectorAll("main section").forEach(s => s.hidden = b.dataset.k !== "*" && s.dataset.cat !== b.dataset.k);
+});
+
+document.getElementById("tallyline").innerHTML =
+  `노자장부 기록 ${tally(VIDEOS.length, 22, true)} <b>${VIDEOS.length}편 완성</b>`;
+
+// decorative coins on the string
+(function(){
+  const g = document.getElementById("coins"), P = [[-20,16],[140,86],[420,104],[700,36]];
+  const bz = t => P[0].map((_,k)=>(1-t)**3*P[0][k]+3*(1-t)**2*t*P[1][k]+3*(1-t)*t*t*P[2][k]+t**3*P[3][k]);
+  [.1,.28,.46,.64,.82].forEach((t,i)=>{
+    const [x,y] = bz(t), r = 16 - i;
+    g.insertAdjacentHTML("beforeend",
+      `<g transform="rotate(${i*9-14} ${x} ${y})"><circle cx="${x}" cy="${y}" r="${r}" fill="#F2C46B"/>
+       <circle cx="${x}" cy="${y}" r="${r*.8}" fill="none" stroke="#D9A441" stroke-width="1.6"/>
+       <rect x="${x-r*.32}" y="${y-r*.32}" width="${r*.64}" height="${r*.64}" fill="#FFFBF4" stroke="#D9A441" stroke-width="1.2"/></g>`);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR 코드 | 노잣돈 갚기 프로젝트, 그 후</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{word-break:keep-all;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;color:#3F3550;
+       font-family:"Gowun Dodum","Noto Sans KR","Malgun Gothic",sans-serif;
+       background:repeating-linear-gradient(0deg,transparent 0 35px,rgba(150,120,80,.10) 35px 36px),radial-gradient(130% 90% at 50% 40%,#F8F1E4,#EDE1CB)}
+  .sheet{background:#FFFBF4;border:1px solid #E4D8C3;border-radius:22px;padding:34px 30px 28px;text-align:center;max-width:460px;width:100%;
+         box-shadow:0 4px 0 rgba(63,53,80,.06)}
+  .eyebrow{font-size:14px;color:#8A7F8F}
+  h1{font-family:"Jua",sans-serif;font-weight:400;font-size:34px;line-height:1.2;margin:6px 0 4px}
+  h1 span{color:#E8907F}
+  .sub{color:#8A7F8F;font-size:15px;margin-bottom:22px}
+  #qr{display:inline-block;padding:16px;background:#fff;border-radius:16px;border:2px dashed #E8907F}
+  #qr img,#qr canvas{display:block;width:260px;height:260px}
+  .scan{margin-top:16px;font-family:"Jua",sans-serif;font-size:19px}
+  .url{margin-top:6px;font-size:13px;color:#8A7F8F;word-break:break-all}
+  .btns{margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  button,a.btn{font-family:inherit;font-size:14px;border-radius:999px;padding:8px 16px;border:1.5px solid #3F3550;background:#3F3550;color:#FFFBF4;cursor:pointer;text-decoration:none}
+  a.btn.ghost{background:transparent;color:#3F3550}
+  @media print{body{background:#fff}.btns{display:none}.sheet{border:none;box-shadow:none}}
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <p class="eyebrow">오라초등학교 6학년 · 오라 다이음</p>
+    <h1>노잣돈 갚기 프로젝트,<br><span>그 후</span></h1>
+    <p class="sub">우리가 만든 영상 7편 상영관</p>
+    <div id="qr"></div>
+    <p class="scan">휴대폰 카메라로 찍어 보세요!</p>
+    <p class="url" id="url"></p>
+    <div class="btns">
+      <button onclick="window.print()">인쇄하기</button>
+      <a class="btn ghost" id="dl" download="노잣돈_영상상영관_QR.png">QR 이미지 저장</a>
+      <a class="btn ghost" href="./">상영관으로</a>
+    </div>
+  </div>
+<script>
+  // 이 파일이 있는 주소에서 상영관 주소(index.html)를 자동으로 만듭니다.
+  const target = location.href.replace(/qr\.html.*$/, "");
+  document.getElementById("url").textContent = target;
+  new QRCode(document.getElementById("qr"), { text: target, width: 520, height: 520, colorDark: "#3F3550", colorLight: "#FFFFFF", correctLevel: QRCode.CorrectLevel.M });
+  setTimeout(() => {
+    const c = document.querySelector("#qr canvas");
+    if (c) document.getElementById("dl").href = c.toDataURL("image/png");
+  }, 300);
+</script>
+</body>
+</html>
